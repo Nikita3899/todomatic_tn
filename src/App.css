@@ -1,0 +1,180 @@
+#root {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	background-color: cornsilk;	
+ }
+
+ * {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+	
+  }
+
+  main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainContainer {
+	overflow: hidden; /* Hide scrollbars */
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	background-color: powderblue;
+	border-radius: 10% ;
+	width: 80vh;
+	margin-top: 25px;
+	height: 93vh;
+}
+
+header h1{
+	background-color: #a071b8;
+	border-radius: 10px;
+	color: white;
+	font-size: 2rem;
+	padding: 0.5rem 1rem;
+	text-align: center; 
+ }
+ 
+#new-task-form {
+	padding: 0.5rem;
+}
+
+#new-task-form {
+	align-items: center;
+	display: flex;
+	font-size: 12px;
+	justify-content:center;
+	
+}
+
+#new-task-input {
+	appearance: none;
+	background: white;
+	border-radius: 5px 5px ;
+	border:black;
+	font-size: 1.125rem;
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 10px;
+}
+
+#new-task-input2{
+	appearance: none;
+	background: white;
+	border-radius: 5px 5px ;
+	border:black;
+	font-size: 1.125rem;
+	width: 50%;
+	padding: 0.5rem;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+
+/* addbutton */
+
+#new-task-submit{         
+	background-color: #c2c2c2;
+   padding: 0.5rem;
+   border-radius: 5px 5px;
+   width: 50%;
+   margin-left: 10px;
+   font-size: 1.12rem;
+   font-weight: 500;
+   margin-top: 10px;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+#final-text{
+	margin-top:20px;
+	margin-left: 50px;
+	appearance: none;
+	border-radius: 5px 5px ;
+	border:black;
+	font-size: 1.125rem;
+	width: 50%;
+	padding: 0.5rem;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.task .content .text {
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions .delete {
+	color: crimson;
+	margin-left: 10px;
+}
+
+.task .actions .edit {
+	color: green;
+	margin-left: 40px;	 
+}
+
+li input[type ="checkbox"]{
+	display: inline-block;
+   color: black;
+   cursor: pointer;
+   letter-spacing: 1rem;
+   margin-left: 1rem;
+   margin-top: 25px;
+   transform: scale(1.75);
+} 
+
+.task-list {
+	padding: 1rem;
+}
+
+.task .actions button {
+   background-color: #c2c2c2;
+   padding: 0.5rem;
+   border-radius: 8px;
+   cursor: pointer;
+   margin: 0 0.5rem;
+   font-size: 1.12rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.task .content .text {
+	color: black; 
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task li {
+	border-bottom: 1px solid #dbdbdb;
+	display: flex;
+	font-size: 1.25rem;
+	padding: 1rem;
+	align-items: flex-start;
+ }
